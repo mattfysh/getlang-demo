@@ -1,0 +1,10 @@
+inputs { slug }
+
+GET https://books.toscrape.com/catalogue/:slug/index.html
+
+extract {
+  url: @link
+  title: h1
+  price: .product_main -> p
+  in_stock?: .product_main .instock -> `Boolean($)`
+}
