@@ -1,0 +1,6 @@
+GET https://example.com
+
+extract {
+  title
+  texts: => p
+}

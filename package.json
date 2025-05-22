@@ -1,0 +1,15 @@
+{
+  "name": "demo",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@getlang/get": "^0.2.5"
+  }
+}
